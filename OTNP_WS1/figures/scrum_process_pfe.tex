@@ -1,0 +1,102 @@
+% Schéma du processus Scrum — Projet PFE (6 mois)
+% Style inspiré du diagramme Scrum classique (bleu clair → bleu foncé)
+
+\begin{figure}[h]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        phase/.style={
+            circle,
+            minimum size=2.4cm,
+            line width=2.5pt,
+            draw=scrumcyan,
+            fill=scrumcyan!12
+        },
+        done/.style={
+            circle,
+            minimum size=2.4cm,
+            line width=2.5pt,
+            draw=scrumbnavy,
+            fill=scrumbnavy
+        },
+        lbl/.style={
+            text width=2.6cm,
+            align=center,
+            font=\small
+        }
+    ]
+
+        % --- Phase de planification (bleu clair) ---
+        \node[phase] (backlog) at (0, 0) {%
+            \begin{tikzpicture}[scale=0.55, scrumcyan]
+                \foreach \y in {0.35, 0, -0.35} {
+                    \draw[line width=1.2pt, rounded corners=1pt] (-0.55,\y-0.08) rectangle (0.55,\y+0.08);
+                }
+            \end{tikzpicture}%
+        };
+        \node[lbl, below=0.15cm of backlog] {Backlog\\produit};
+
+        \node[phase] (planning) at (3.6, 0) {%
+            \begin{tikzpicture}[scale=0.55, scrumcyan]
+                \foreach \y/\c in {0.35/false, 0/true, -0.35/false} {
+                    \draw[line width=1.2pt, rounded corners=1pt] (-0.55,\y-0.08) rectangle (0.55,\y+0.08);
+                    \if\c
+                        \draw[line width=1.2pt] (-0.35,\y) -- (-0.18,\y-0.1) -- (-0.02,\y+0.12);
+                    \fi
+                }
+            \end{tikzpicture}%
+        };
+        \node[lbl, below=0.15cm of planning] {Réunion de\\planification\\du sprint};
+
+        \node[phase] (sprintbl) at (7.2, 0) {%
+            \begin{tikzpicture}[scale=0.55, scrumcyan]
+                \draw[line width=1.2pt, rounded corners=1pt] (-0.35,-0.45) rectangle (0.35,0.45);
+                \draw[line width=1.2pt, rounded corners=1pt] (-0.15,-0.55) rectangle (0.55,0.35);
+            \end{tikzpicture}%
+        };
+        \node[lbl, below=0.15cm of sprintbl] {Backlog\\du sprint};
+
+        \draw[scrumcyan, line width=5pt, -{Triangle[fill=scrumcyan, length=8pt, width=10pt]}]
+            (backlog.east) -- (planning.west);
+        \draw[scrumcyan, line width=5pt, -{Triangle[fill=scrumcyan, length=8pt, width=10pt]}]
+            (planning.east) -- (sprintbl.west);
+
+        % --- Boucle Sprint (bleu foncé) — 6 mois au lieu de 1–4 semaines ---
+        \begin{scope}[shift={(11.8, 0)}]
+            \draw[scrumbnavy, line width=9pt, -{Triangle[fill=scrumbnavy, length=12pt, width=14pt]}]
+                (30:3.1cm) arc (30:330:3.1cm);
+
+            \node[align=center, text=scrumbnavy] at (0, -0.15) {%
+                {\Large\bfseries SPRINT}\\[3pt]
+                {\large 6 mois}\\[2pt]
+                {\footnotesize (6 sprints)}
+            };
+
+            % Scrum quotidien (petite boucle)
+            \draw[scrumbnavy, line width=4pt, -{Triangle[fill=scrumbnavy, length=6pt, width=8pt]}]
+                (210:1.35cm) arc (210:510:1.35cm);
+            \node[align=center, font=\scriptsize, text=scrumbnavy] at (0, 2.15)
+                {\textbf{24H}\\Scrum quotidien};
+        \end{scope}
+
+        \draw[scrumcyan, line width=5pt, -{Triangle[fill=scrumcyan, length=8pt, width=10pt]}]
+            (sprintbl.east) -- ++(0.9, 0)
+            .. controls +(0.7, 0.55) and +(-1.0, 0.55) .. (8.7, 0.55);
+
+        \draw[scrumbnavy, line width=7pt, -{Triangle[fill=scrumbnavy, length=10pt, width=12pt]}]
+            (14.9, 0) -- (16.2, 0);
+
+        % --- Travail terminé ---
+        \node[done] (finished) at (17.8, 0) {%
+            \begin{tikzpicture}[scale=0.55, white]
+                \draw[line width=1.2pt, rounded corners=1pt] (-0.45,-0.55) rectangle (0.45,0.55);
+                \draw[line width=1.4pt] (-0.22,-0.05) -- (0,0.18) -- (0.35,-0.35);
+            \end{tikzpicture}%
+        };
+        \node[lbl, below=0.15cm of finished] {Travail\\terminé};
+
+    \end{tikzpicture}%
+    }
+    \caption{Processus Scrum adapté au projet PFE sur une durée de 6 mois}
+    \label{fig:scrum-process}
+\end{figure}

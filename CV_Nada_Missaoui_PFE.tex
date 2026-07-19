@@ -1,0 +1,161 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+\definecolor{mainblue}{HTML}{1F4E79}
+\definecolor{textgray}{HTML}{333333}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=mainblue
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=2pt}
+
+\titleformat{\section}
+  {\large\bfseries\color{mainblue}}
+  {}
+  {0pt}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\newcommand{\cvitem}[2]{\textbf{#1} #2}
+\newcommand{\entry}[4]{
+    \textbf{#1} \hfill \textbf{#2}\\
+    \textit{#3} \hfill \textit{#4}\\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Nada Missaoui}}\\[3pt]
+    {\large Ingenieure en Genie Logiciel}\\[6pt]
+    \faEnvelope\ \href{mailto:nada.missaoui@esprit.tn}{nada.missaoui@esprit.tn}
+    \quad
+    \faPhone\ +216 58 015 941
+    \quad
+    \faMapMarker*\ Ariana Soghra, Ariana\\[3pt]
+    \faLinkedin\ \href{https://www.linkedin.com/in/missaoui-nada-261140365}{linkedin.com/in/missaoui-nada-261140365}
+\end{center}
+
+\section*{Profil}
+Recemment diplomee en Genie Logiciel a ESPRIT, avec une orientation vers le developpement d'applications web, les architectures backend et l'integration de systemes metier.
+Mon stage PFE chez Billcom Consulting m'a permis de concevoir et developper un portail de monitoring de portabilite telephonique base sur React, Spring Boot, jBPM / KIE Server, services SOAP / REST et MySQL.
+Rigoureuse, autonome et motivee, je souhaite mettre mes competences techniques au service de projets innovants et a forte valeur ajoutee.
+
+\section*{Formation}
+\entry{ESPRIT - Ecole Superieure Privee d'Ingenierie et de Technologies}{2023 -- Present}
+{Cycle Ingenieur en Genie Logiciel}{Tunis, Tunisie}
+
+\entry{IPEI Gabes}{2021 -- 2023}
+{Cycle Preparatoire Physique-Chimie}{Gabes, Tunisie}
+
+\entry{Baccalaureat Mathematiques}{2021}
+{Diplome de fin d'etudes secondaires}{Tunisie}
+
+\section*{Experience Professionnelle}
+\entry{Billcom Consulting}{2025 -- 2026}
+{Stage PFE - Conception et mise en place d'une plateforme de supervision des processus de portabilite telephonique}{Tunis, Tunisie}
+\begin{itemize}
+    \item Conception et developpement d'un portail web dedie au suivi des demandes de portabilite telephonique IN et OUT.
+    \item Mise en place d'un dashboard de monitoring pour visualiser les indicateurs cles, les instances de processus, les erreurs et les taches bloquees.
+    \item Developpement de modules backend Spring Boot exposes sous forme d'API REST pour la consultation, le recyclage et l'analyse des processus jBPM.
+    \item Integration avec KIE Server / jBPM pour le suivi des workflows BPMN et la gestion du cycle de vie des demandes.
+    \item Integration de services SOAP / XML pour l'echange avec les systemes metier CRM, BSCS et NP Service.
+    \item Developpement d'une interface React avec navigation securisee, graphiques, notifications, export PDF / Excel et pages de consultation.
+    \item Ajout d'un module d'analyse intelligente des logs et erreurs avec recommandations de resolution.
+    \item Utilisation de Git, Postman, Swagger / OpenAPI et Maven pour le developpement, les tests et la documentation des API.
+\end{itemize}
+\textbf{Technologies :} Java, Spring Boot, Spring Data JPA, REST API, React, Axios, Recharts, MySQL, jBPM, KIE Server, SOAP, XML, Swagger / OpenAPI, Maven, Git, Postman, Docker.
+
+\vspace{4pt}
+\entry{Billcom Consulting}{2025}
+{Stage Ingenieur - Developpement d'une application de gestion de projet Full Stack}{Tunis, Tunisie}
+\begin{itemize}
+    \item Developpement d'une application de gestion de projet Full Stack.
+    \item Conception et implementation de fonctionnalites backend avec Spring Boot.
+    \item Developpement de l'interface utilisateur avec Angular.
+    \item Deploiement de l'application avec Docker.
+\end{itemize}
+\textbf{Technologies :} Spring Boot, Angular, Docker.
+
+\vspace{4pt}
+\entry{ESPRIT}{2024}
+{Stage d'ete - Linux et outillage de developpement}{Tunis, Tunisie}
+\begin{itemize}
+    \item Realisation de projets pratiques sous environnement Linux.
+    \item Installation, configuration et utilisation d'outils de developpement.
+    \item Creation de scripts pour automatiser des taches courantes.
+\end{itemize}
+
+\section*{Projets Academiques et Techniques}
+\textbf{Portail de Monitoring de Portabilite - Projet PFE}\\
+Application web complete permettant aux superviseurs de suivre en temps reel les demandes de portabilite, de detecter les erreurs, de consulter les indicateurs de performance et de recycler les taches bloquees.
+\begin{itemize}
+    \item Architecture modulaire composee d'un frontend React, de backends Spring Boot et de services metier.
+    \item Suivi des processus jBPM via KIE Server et consultation de l'historique des instances.
+    \item Gestion des portabilites IN / OUT, statistiques, notifications et exports.
+    \item Analyse des logs et assistance IA pour proposer des solutions aux erreurs recurrentes.
+\end{itemize}
+\textbf{Technologies :} React, Spring Boot, Java, MySQL, REST, SOAP, jBPM, KIE Server, OpenAPI, Docker.
+
+\vspace{4pt}
+\textbf{Application de Gestion de Conferences - Full Stack}\\
+Conception et developpement d'une application web pour la gestion de conferences : sessions, inscriptions, reservations et paiements.\\
+\textbf{Technologies :} Spring Boot, Angular, MySQL.
+
+\vspace{4pt}
+\textbf{Site E-commerce}\\
+Developpement d'une plateforme e-commerce avec gestion des produits, panier, commandes et authentification securisee.\\
+\textbf{Technologies :} Symfony, PHP, MySQL.
+
+\vspace{4pt}
+\textbf{Projet C sous Linux}\\
+Realisation d'un programme en langage C sous Linux, applique aux concepts de programmation systeme et d'algorithmique.\\
+\textbf{Technologies :} C, Linux, VirtualBox.
+
+\section*{Competences Techniques}
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+\textbf{Langages} & Java, JavaScript, C, C\#, PHP, SQL \\
+\textbf{Frontend} & React, Angular, HTML5, CSS3, Bootstrap, Recharts \\
+\textbf{Backend} & Spring Boot, Spring Data JPA, REST API, Symfony, .NET, Microservices \\
+\textbf{Workflow / Integration} & jBPM, KIE Server, BPMN, SOAP, XML, OpenFeign, Web Services \\
+\textbf{Securite} & Spring Security, JWT, authentification et autorisation \\
+\textbf{Bases de donnees} & MySQL, Oracle Database, DBeaver \\
+\textbf{DevOps / Outils} & Git, GitHub, Docker, Maven, Postman, Swagger / OpenAPI, IntelliJ IDEA, VS Code, Eclipse, XAMPP \\
+\textbf{Methodologies} & Agile / Scrum, Jira, Trello, UML, StarUML \\
+\end{tabularx}
+
+\section*{Certifications}
+\begin{itemize}
+    \item AWS - Introduction au Cloud (2025)
+    \item C-SDG - Sustainable Development Goals (2025)
+    \item Blockchain - Initiation a la technologie Blockchain (2025)
+    \item NVIDIA - Applications of AI for Anomaly Detection (2025)
+    \item NVIDIA - Building Transformer-Based NLP Applications (2025)
+\end{itemize}
+
+\section*{Langues}
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+\textbf{Arabe} & Langue maternelle \\
+\textbf{Francais} & Niveau B2 \\
+\textbf{Anglais} & Niveau B2 \\
+\end{tabularx}
+
+\section*{Qualites Personnelles}
+Travail d'equipe, autonomie, rigueur, adaptabilite, esprit d'initiative, communication efficace, resolution de problemes, esprit analytique, orientation resultats.
+
+\end{document}

@@ -1,0 +1,367 @@
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Loading model"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Model loaded successfully"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Saving solution to history"}
+{"asctime": "2026-07-11 21:01:21", "name": "otnp_ai", "levelname": "INFO", "message": "Solution saved successfully"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Loading model"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Model loaded successfully"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Saving solution to history"}
+{"asctime": "2026-07-11 21:02:39", "name": "otnp_ai", "levelname": "INFO", "message": "Solution saved successfully"}
+{"asctime": "2026-07-13 12:24:52", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-13 12:24:52", "name": "otnp_ai", "levelname": "INFO", "message": "Hugging Face analysis completed"}
+{"asctime": "2026-07-13 12:24:52", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-13 12:24:54", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-13 12:24:54", "name": "otnp_ai", "levelname": "INFO", "message": "Hugging Face analysis completed"}
+{"asctime": "2026-07-13 12:24:54", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-13 12:24:56", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-13 12:24:56", "name": "otnp_ai", "levelname": "INFO", "message": "Hugging Face analysis completed"}
+{"asctime": "2026-07-13 12:24:56", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-13 12:24:59", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-13 12:24:59", "name": "otnp_ai", "levelname": "INFO", "message": "Hugging Face analysis completed"}
+{"asctime": "2026-07-13 12:24:59", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-13 12:25:01", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-13 12:25:01", "name": "otnp_ai", "levelname": "INFO", "message": "Hugging Face analysis completed"}
+{"asctime": "2026-07-13 12:25:01", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-14 11:42:51", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-14 11:42:51", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-14 11:42:54", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-14 11:42:54", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-14 11:42:56", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-14 11:42:56", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-14 11:42:58", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-14 11:42:58", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-14 11:43:00", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-14 11:43:00", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 10:54:55", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 10:56:39", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 11:01:57", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:01:57", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:01:59", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:01:59", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:02:01", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:02:01", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:02:03", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:02:03", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:02:05", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:02:05", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:17:22", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 11:19:34", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:19:34", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:19:36", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:19:37", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:19:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:19:39", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:19:41", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:19:41", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:19:43", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:19:43", "name": "otnp_ai", "levelname": "INFO", "message": "Analysis completed"}
+{"asctime": "2026-07-15 11:32:50", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 11:34:40", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 11:34:40", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-15 11:34:40", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-15 11:58:16", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 11:59:48", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-15 12:00:04", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-15 12:00:04", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-15 12:00:04", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:42", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:57", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-15 21:45:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-15 21:47:02", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-16 09:19:33", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:20:34", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:16", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:26", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:21:49", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:04", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:05", "name": "otnp_ai", "levelname": "ERROR", "message": "Chat failed"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:08", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "INFO", "message": "Trying HF model: microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"}
+{"asctime": "2026-07-16 09:22:39", "name": "otnp_ai", "levelname": "WARNING", "message": "HF call failed for https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:57", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:24:58", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:25:34", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:10", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:19", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:31", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:43", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:27:53", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:30:15", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - skipping LLM"}
+{"asctime": "2026-07-16 09:32:33", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 09:32:35", "name": "otnp_ai", "levelname": "WARNING", "message": "HF DNS resolution failed - no internet access"}
+{"asctime": "2026-07-16 13:05:10", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama not installed"}
+{"asctime": "2026-07-16 13:05:52", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:06:28", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:06:45", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:09:13", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:11:36", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:17:58", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-16 13:17:59", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-16 13:18:35", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:19:56", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:20:08", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:20:52", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:25:21", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:25:36", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:25:54", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:26:16", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:27:22", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:28:04", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 13:28:13", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-16 21:23:28", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-17 23:29:05", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:29:05", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:29:05", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-17 23:29:24", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:29:24", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:29:24", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-17 23:29:34", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:29:34", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:29:34", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-17 23:41:07", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:41:10", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:41:10", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-17 23:41:16", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:41:16", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:41:16", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-17 23:42:41", "name": "otnp_ai", "levelname": "INFO", "message": "Analyzing log"}
+{"asctime": "2026-07-17 23:42:41", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM analysis failed, fallback to ML"}
+{"asctime": "2026-07-17 23:42:41", "name": "otnp_ai", "levelname": "WARNING", "message": "LLM failed, fallback to ML"}
+{"asctime": "2026-07-18 11:20:15", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-18 11:21:16", "name": "otnp_ai", "levelname": "INFO", "message": "Ollama detected: C:\\Users\\lenovo\\AppData\\Local\\Programs\\Ollama\\ollama.exe - ollama version is 0.32.0"}
+{"asctime": "2026-07-18 11:21:16", "name": "otnp_ai", "levelname": "INFO", "message": "Modele ML charge avec succes"}
+{"asctime": "2026-07-18 11:21:36", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-18 11:22:00", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}
+{"asctime": "2026-07-18 11:27:19", "name": "otnp_ai", "levelname": "INFO", "message": "Chat request"}

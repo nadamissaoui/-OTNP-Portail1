@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: otnp-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: monitoring_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  monitoring-back:
+    build:
+      context: ./monitoring-back/monitoring-back
+      dockerfile: Dockerfile
+    container_name: otnp-monitoring-back
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  ai-service:
+    build:
+      context: ./ai-service
+      dockerfile: Dockerfile
+    container_name: otnp-ai-service
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./ai-service/models:/app/models
+      - ./ai-service/data:/app/data
+      - ./ai-service/logs:/app/logs
+
+  monitoring-front:
+    build:
+      context: ./monitoring-front
+      dockerfile: Dockerfile
+    container_name: otnp-monitoring-front
+    ports:
+      - "3000:80"
+    depends_on:
+      - monitoring-back
+      - ai-service
+
+volumes:
+  mysql_data:

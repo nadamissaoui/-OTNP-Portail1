@@ -1,0 +1,468 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\onehalfspacing
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\definecolor{codegray}{RGB}{245,245,245}
+\definecolor{codeborder}{RGB}{210,210,210}
+\lstdefinestyle{javastyle}{
+    backgroundcolor=\color{codegray},
+    frame=single,
+    rulecolor=\color{codeborder},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{teal},
+    showstringspaces=false
+}
+\lstset{style=javastyle}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Large \textbf{École / Université : \underline{\hspace{7cm}}}}\\[0.4cm]
+    {\Large Département : \underline{\hspace{7cm}}}\\[2cm]
+
+    {\Huge \textbf{Rapport de Projet de Fin d'Études}}\\[0.8cm]
+    {\LARGE \textbf{Conception et développement d'un service d'orchestration et de monitoring pour la portabilité des numéros mobiles}}\\[2cm]
+
+    \begin{tabular}{>{\bfseries}p{5cm}p{8cm}}
+        Réalisé par : & \underline{\hspace{7cm}}\\[0.4cm]
+        Encadrant académique : & \underline{\hspace{7cm}}\\[0.4cm]
+        Encadrant professionnel : & \underline{\hspace{7cm}}\\[0.4cm]
+        Organisme d'accueil : & \underline{\hspace{7cm}}\\[0.4cm]
+        Année universitaire : & 2025--2026
+    \end{tabular}
+
+    \vfill
+    {\large Mai 2026}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\chapter*{Remerciements}
+Je tiens à exprimer ma profonde gratitude à mes encadrants pour leur accompagnement, leurs conseils et leur disponibilité tout au long de ce projet. Je remercie également l'équipe technique qui m'a permis de comprendre le contexte métier de la portabilité des numéros et les contraintes d'intégration avec les systèmes de processus métier.
+
+\chapter*{Résumé}
+Ce rapport présente la conception et le développement d'une application backend dédiée à l'orchestration et au suivi des demandes de portabilité des numéros mobiles. La solution repose sur Spring Boot, Apache CXF, KIE Server et jBPM. Elle expose un service SOAP permettant de lancer une demande de portabilité et d'envoyer des décisions métier, ainsi qu'une API REST permettant de rechercher et consulter les instances de processus.
+
+L'application facilite l'intégration entre un système externe, le moteur de processus jBPM et les modules de portabilité IN/OUT. Elle améliore la traçabilité des demandes grâce à un module de monitoring capable de filtrer les instances par identifiant, numéro, client, statut et période.
+
+\textbf{Mots-clés :} Spring Boot, jBPM, KIE Server, SOAP, REST, portabilité mobile, monitoring, orchestration.
+
+\chapter*{Abstract}
+This report presents the design and implementation of a backend application for orchestrating and monitoring mobile number portability requests. The solution is based on Spring Boot, Apache CXF, KIE Server and jBPM. It exposes a SOAP service to start portability processes and send business decisions, as well as a REST API for searching and monitoring process instances.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+\pagenumbering{arabic}
+
+\chapter{Introduction générale}
+\section{Contexte du projet}
+La portabilité des numéros mobiles permet à un abonné de conserver son numéro lorsqu'il change d'opérateur. Ce processus implique plusieurs acteurs et plusieurs étapes : réception de la demande, vérification de l'éligibilité, interaction avec l'opérateur donneur, validation ou rejet, puis finalisation technique.
+
+Dans un environnement télécom, ce type de processus doit être fiable, traçable et facilement intégrable avec des systèmes hétérogènes. Le projet étudié répond à ce besoin en proposant un service backend capable de communiquer avec un moteur de processus jBPM via KIE Server, tout en exposant des interfaces SOAP et REST.
+
+\section{Problématique}
+La gestion manuelle ou peu centralisée des demandes de portabilité peut provoquer plusieurs difficultés :
+\begin{itemize}
+    \item manque de visibilité sur l'état des demandes ;
+    \item difficulté de suivi des instances de processus ;
+    \item intégration complexe avec les processus jBPM ;
+    \item faible traçabilité des décisions métier ;
+    \item besoin d'interfaces adaptées aux systèmes existants.
+\end{itemize}
+
+La problématique principale est donc la suivante : comment concevoir un service backend permettant de lancer, piloter et suivre les demandes de portabilité d'une manière fiable, extensible et intégrable avec jBPM ?
+
+\section{Objectifs}
+Les objectifs du projet sont :
+\begin{itemize}
+    \item exposer un service SOAP pour lancer une demande de portabilité ;
+    \item transmettre les décisions métier au moteur jBPM ;
+    \item orchestrer les processus de portabilité IN et OUT ;
+    \item fournir une API REST de monitoring ;
+    \item permettre la recherche des instances par plusieurs critères ;
+    \item centraliser la configuration KIE Server et les paramètres des processus.
+\end{itemize}
+
+\section{Organisation du rapport}
+Ce rapport est organisé en six chapitres. Le premier introduit le contexte général. Le deuxième présente l'étude fonctionnelle. Le troisième détaille la conception. Le quatrième décrit la réalisation technique. Le cinquième présente les tests et la validation. Enfin, le dernier chapitre conclut le travail et propose des perspectives d'amélioration.
+
+\chapter{Étude fonctionnelle}
+\section{Présentation du domaine}
+La portabilité mobile est un processus métier sensible. Elle commence lorsqu'un client demande à transférer son numéro vers un nouvel opérateur. Le système doit vérifier les informations de la demande, notamment le numéro MSISDN et le code RIO, puis coordonner les échanges avec les autres parties.
+
+\section{Acteurs du système}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{4cm}p{9cm}}
+        \toprule
+        \textbf{Acteur} & \textbf{Rôle} \\
+        \midrule
+        Système client & Envoie les demandes de portabilité et les décisions métier. \\
+        Service OTNP & Reçoit les requêtes, appelle KIE Server et orchestre les processus. \\
+        KIE Server / jBPM & Exécute les processus métier de portabilité. \\
+        Administrateur / Agent & Consulte les demandes et suit leur état via l'API de monitoring. \\
+        \bottomrule
+    \end{tabular}
+    \caption{Acteurs principaux du système}
+\end{table}
+
+\section{Besoins fonctionnels}
+\subsection{Lancement d'une portabilité}
+Le système doit permettre le démarrage d'une nouvelle demande de portabilité à partir d'un numéro MSISDN et d'un code RIO. Cette action crée une nouvelle instance de processus dans jBPM.
+
+\subsection{Transmission des décisions}
+Le service doit gérer plusieurs décisions métier :
+\begin{itemize}
+    \item \texttt{ELIGIBILITY\_OK} : l'éligibilité est validée et le processus de portabilité OUT est déclenché ;
+    \item \texttt{DONOR\_ACCEPTED} : l'opérateur donneur accepte la demande ;
+    \item \texttt{REJECTED} : la demande est rejetée.
+\end{itemize}
+
+\subsection{Monitoring des demandes}
+Le système doit permettre de rechercher les instances de processus selon plusieurs critères :
+\begin{itemize}
+    \item identifiant d'instance ;
+    \item identifiant CRM ;
+    \item statut jBPM ;
+    \item MSISDN ou numéro de téléphone ;
+    \item code contrat ;
+    \item intervalle de dates ;
+    \item pagination.
+\end{itemize}
+
+\section{Besoins non fonctionnels}
+\begin{itemize}
+    \item \textbf{Fiabilité :} le service doit gérer les erreurs de communication avec KIE Server.
+    \item \textbf{Traçabilité :} les principales étapes doivent être journalisées.
+    \item \textbf{Interopérabilité :} l'exposition SOAP facilite l'intégration avec des systèmes existants.
+    \item \textbf{Maintenabilité :} la configuration doit être centralisée dans le fichier \texttt{application.properties}.
+    \item \textbf{Sécurité d'intégration :} les accès KIE Server sont externalisés par configuration.
+\end{itemize}
+
+\chapter{Conception de la solution}
+\section{Architecture générale}
+L'application est organisée autour de quatre couches principales :
+\begin{itemize}
+    \item couche exposition SOAP avec Apache CXF ;
+    \item couche exposition REST avec Spring Web ;
+    \item couche service contenant la logique métier ;
+    \item couche intégration KIE Server pour communiquer avec jBPM.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1.6cm,
+        box/.style={rectangle, draw, rounded corners, align=center, minimum width=3.7cm, minimum height=1cm},
+        arrow/.style={-{Latex}, thick}
+    ]
+        \node[box] (client) {Système externe\\SOAP / REST};
+        \node[box, below=of client] (app) {Application OTNP\\Spring Boot};
+        \node[box, below left=1.4cm and 1.2cm of app] (soap) {Service SOAP\\OTNPService};
+        \node[box, below right=1.4cm and 1.2cm of app] (rest) {API REST\\Monitoring};
+        \node[box, below=3.2cm of app] (kie) {KIE Server\\jBPM};
+
+        \draw[arrow] (client) -- (app);
+        \draw[arrow] (app) -- (soap);
+        \draw[arrow] (app) -- (rest);
+        \draw[arrow] (soap) -- (kie);
+        \draw[arrow] (rest) -- (kie);
+    \end{tikzpicture}
+    \caption{Architecture générale de la solution}
+\end{figure}
+
+\section{Diagramme de cas d'utilisation}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1.2cm,
+        actor/.style={rectangle, draw, align=center, minimum width=2.8cm, minimum height=0.8cm},
+        usecase/.style={ellipse, draw, align=center, minimum width=4.2cm, minimum height=0.9cm},
+        line/.style={thick}
+    ]
+        \node[actor] (systeme) {Système client};
+        \node[actor, right=8cm of systeme] (agent) {Agent / Admin};
+
+        \node[usecase, below=0.4cm of systeme, xshift=4cm] (start) {Lancer une portabilité};
+        \node[usecase, below=of start] (decision) {Envoyer une décision};
+        \node[usecase, below=of decision] (search) {Rechercher les demandes};
+        \node[usecase, below=of search] (details) {Consulter les variables};
+
+        \draw[line] (systeme) -- (start);
+        \draw[line] (systeme) -- (decision);
+        \draw[line] (agent) -- (search);
+        \draw[line] (agent) -- (details);
+    \end{tikzpicture}
+    \caption{Cas d'utilisation principaux}
+\end{figure}
+
+\section{Flux de traitement}
+\subsection{Démarrage d'une demande}
+Lorsqu'une demande est reçue, le service \texttt{OTNPServiceImpl} prépare les variables \texttt{phoneNumber} et \texttt{rioCode}, puis appelle la méthode \texttt{startProcess} du client jBPM.
+
+\subsection{Décision d'éligibilité}
+Lorsque le statut \texttt{ELIGIBILITY\_OK} est reçu, le service démarre le processus de portabilité OUT et signale l'instance IN avec le signal \texttt{Signal\_Eligibilite\_Validee}.
+
+\subsection{Accord donneur}
+Lorsque le statut \texttt{DONOR\_ACCEPTED} est reçu, le service envoie le signal \texttt{Signal\_Donor\_Received} à l'instance de processus.
+
+\subsection{Rejet}
+Lorsque le statut \texttt{REJECTED} est reçu, le service envoie le signal \texttt{Signal\_Decision}. Cela permet au processus de terminer le scénario de rejet.
+
+\chapter{Réalisation technique}
+\section{Environnement technique}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{4cm}p{8cm}}
+        \toprule
+        \textbf{Technologie} & \textbf{Utilisation} \\
+        \midrule
+        Java 17 & Langage de développement backend. \\
+        Spring Boot 3.3.4 & Framework principal de l'application. \\
+        Apache CXF & Publication du service SOAP. \\
+        KIE Server Client 7.73.0 & Communication avec jBPM. \\
+        Spring Web & Exposition de l'API REST. \\
+        SpringDoc OpenAPI & Documentation potentielle des endpoints REST. \\
+        Maven & Gestion des dépendances et du cycle de build. \\
+        \bottomrule
+    \end{tabular}
+    \caption{Environnement technique}
+\end{table}
+
+\section{Structure du projet}
+Le projet suit une organisation Spring Boot classique :
+\begin{itemize}
+    \item \texttt{config} : configuration KIE Server, SOAP et CORS ;
+    \item \texttt{service} : services métier de portabilité et monitoring ;
+    \item \texttt{Controller} : contrôleur REST de monitoring ;
+    \item \texttt{resources} : configuration applicative.
+\end{itemize}
+
+\section{Configuration KIE Server}
+La classe \texttt{KieServerConfig} centralise la création des clients KIE :
+\begin{itemize}
+    \item \texttt{KieServicesClient} pour l'accès global au serveur ;
+    \item \texttt{ProcessServicesClient} pour démarrer et signaler les processus ;
+    \item \texttt{QueryServicesClient} pour rechercher les instances.
+\end{itemize}
+
+\begin{lstlisting}[language=Java,caption={Création du client KIE Server}]
+KieServicesConfiguration config =
+    KieServicesFactory.newRestConfiguration(url, user, password);
+config.setTimeout(60000L);
+config.setMarshallingFormat(MarshallingFormat.JSON);
+return KieServicesFactory.newKieServicesClient(config);
+\end{lstlisting}
+
+\section{Service SOAP de portabilité}
+L'interface \texttt{OTNPService} expose deux opérations :
+\begin{itemize}
+    \item \texttt{startPortability(msisdn, rioCode)} ;
+    \item \texttt{sendDecision(instanceId, status)}.
+\end{itemize}
+
+La publication SOAP est réalisée avec Apache CXF à travers le chemin \texttt{/services/OTNPService}. Le port applicatif configuré est \texttt{8089}. L'URL du WSDL est donc généralement :
+
+\begin{center}
+\texttt{http://localhost:8089/services/OTNPService?wsdl}
+\end{center}
+
+\section{API REST de monitoring}
+Le contrôleur \texttt{MonitoringController} expose l'endpoint suivant :
+
+\begin{center}
+\texttt{GET /api/monitoring/search}
+\end{center}
+
+Il accepte plusieurs paramètres optionnels permettant de filtrer les demandes. La réponse contient une liste d'instances jBPM correspondant aux critères de recherche.
+
+\begin{longtable}{p{4cm}p{9cm}}
+    \toprule
+    \textbf{Paramètre} & \textbf{Description} \\
+    \midrule
+    \endhead
+    \texttt{processInstanceId} & Recherche directe par identifiant d'instance. \\
+    \texttt{crmId} & Recherche par identifiant client CRM. \\
+    \texttt{status} & Filtrage par état jBPM : actif, terminé ou abandonné. \\
+    \texttt{msisdn} & Recherche par numéro mobile. \\
+    \texttt{phoneNumber} & Recherche par variable \texttt{phoneNumber}. \\
+    \texttt{contractCode} & Recherche par code contrat. \\
+    \texttt{dateDebut} & Date minimale de création de l'instance. \\
+    \texttt{dateFin} & Date maximale de création de l'instance. \\
+    \texttt{page} & Numéro de page. \\
+    \texttt{size} & Taille de page. \\
+    \bottomrule
+    \caption{Paramètres de recherche du monitoring}
+\end{longtable}
+
+\section{Gestion des variables de processus}
+Le service de monitoring enrichit les instances avec leurs variables métier lorsque cela est possible. Pour éviter l'échec complet d'une recherche, les erreurs de récupération des variables sont capturées et journalisées. Cette approche rend le monitoring plus robuste, notamment pour les instances historiques ou bloquées côté jBPM.
+
+\section{Configuration CORS}
+La classe \texttt{CorsConfig} autorise les appels provenant de clients web externes. Elle ajoute notamment le header \texttt{SOAPAction}, nécessaire pour certaines requêtes SOAP, et applique le filtre avec une priorité élevée afin qu'il soit exécuté avant les traitements CXF.
+
+\chapter{Tests et validation}
+\section{Tests de démarrage}
+Le premier niveau de validation consiste à démarrer l'application Spring Boot et vérifier que le serveur écoute sur le port \texttt{8089}. Il faut également contrôler que l'endpoint SOAP est publié correctement.
+
+\section{Tests SOAP}
+\subsection{Lancement d'une demande}
+Un test SOAP doit appeler l'opération \texttt{startPortability} avec un numéro MSISDN et un code RIO. Le résultat attendu est un identifiant d'instance jBPM.
+
+\begin{lstlisting}[language=XML,caption={Exemple conceptuel de requête SOAP}]
+<startPortability>
+    <msisdn>21600111222</msisdn>
+    <rioCode>RIO123456</rioCode>
+</startPortability>
+\end{lstlisting}
+
+\subsection{Envoi d'une décision}
+Un second test doit appeler \texttt{sendDecision} avec un identifiant d'instance et l'un des statuts reconnus : \texttt{ELIGIBILITY\_OK}, \texttt{DONOR\_ACCEPTED} ou \texttt{REJECTED}. Le résultat attendu est \texttt{true} lorsque la décision est traitée correctement.
+
+\section{Tests REST}
+Les tests REST consistent à appeler l'endpoint de monitoring avec différents filtres. Exemple :
+
+\begin{center}
+\texttt{/api/monitoring/search?msisdn=21600111222\&page=0\&size=10}
+\end{center}
+
+Le résultat attendu est une liste JSON contenant les instances correspondant au numéro recherché.
+
+\section{Scénarios de validation}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{4cm}p{5cm}p{4cm}}
+        \toprule
+        \textbf{Scénario} & \textbf{Action} & \textbf{Résultat attendu} \\
+        \midrule
+        Portabilité valide & Appel \texttt{startPortability} & Création d'une instance jBPM. \\
+        Éligibilité acceptée & Envoi \texttt{ELIGIBILITY\_OK} & Démarrage du processus OUT. \\
+        Accord donneur & Envoi \texttt{DONOR\_ACCEPTED} & Signal envoyé à l'instance IN. \\
+        Rejet & Envoi \texttt{REJECTED} & Processus orienté vers le rejet. \\
+        Recherche monitoring & Appel REST avec filtres & Liste d'instances retournée. \\
+        \bottomrule
+    \end{tabular}
+    \caption{Scénarios de validation}
+\end{table}
+
+\chapter{Bilan et perspectives}
+\section{Bilan du travail réalisé}
+Le projet a permis de mettre en place un service backend d'orchestration pour la portabilité des numéros mobiles. La solution s'intègre avec KIE Server et jBPM, expose un service SOAP pour les échanges métier et fournit une API REST pour le suivi des demandes.
+
+Les principales réalisations sont :
+\begin{itemize}
+    \item configuration du client KIE Server ;
+    \item publication d'un service SOAP avec Apache CXF ;
+    \item lancement du processus de portabilité IN ;
+    \item orchestration vers le processus de portabilité OUT ;
+    \item gestion des décisions métier ;
+    \item développement d'un service de monitoring flexible ;
+    \item gestion tolérante des erreurs lors de la récupération des variables.
+\end{itemize}
+
+\section{Difficultés rencontrées}
+Plusieurs difficultés peuvent être relevées :
+\begin{itemize}
+    \item intégration entre Spring Boot 3, Jakarta et certaines dépendances historiques liées à jBPM ;
+    \item gestion des erreurs provenant du moteur jBPM ;
+    \item cohérence des noms de variables entre les processus et l'application ;
+    \item nécessité d'assurer la compatibilité SOAP avec les systèmes clients.
+\end{itemize}
+
+\section{Perspectives}
+La solution peut être améliorée par :
+\begin{itemize}
+    \item l'ajout d'une authentification pour sécuriser les endpoints ;
+    \item la mise en place de tests d'intégration automatisés avec un KIE Server de test ;
+    \item l'amélioration de la documentation OpenAPI ;
+    \item la création d'une interface web de monitoring ;
+    \item l'ajout d'indicateurs statistiques sur les demandes ;
+    \item la centralisation des logs dans un outil de supervision.
+\end{itemize}
+
+\chapter*{Conclusion générale}
+\addcontentsline{toc}{chapter}{Conclusion générale}
+Ce projet de fin d'études a permis de concevoir et développer une solution backend répondant à un besoin concret du domaine télécom : l'orchestration et le suivi des demandes de portabilité des numéros mobiles. Grâce à Spring Boot, Apache CXF, KIE Server et jBPM, l'application assure le lien entre les systèmes clients et les processus métier.
+
+Le travail réalisé met en évidence l'importance d'une architecture modulaire, configurable et robuste face aux erreurs d'intégration. La solution constitue une base solide pouvant évoluer vers une plateforme complète de supervision et de pilotage des demandes de portabilité.
+
+\appendix
+\chapter{Configuration applicative}
+\begin{lstlisting}[caption={Extrait de configuration application.properties}]
+server.port=8089
+cxf.path=/services
+
+jbpm.server.url=http://localhost:8080/kie-server/services/rest/server
+jbpm.server.user=wbadmin
+jbpm.server.password=wbadmin
+
+jbpm.container.id=portabilityin_1.0.0-SNAPSHOT
+jbpm.process.in.id=portabilitefinal.Portabilite_Orchestration
+
+jbpm.container.out.id=portaout_1.0.0-SNAPSHOT
+jbpm.process.out.id=portaout.portaout
+
+monitoring.load-variables=true
+monitoring.load-variables-only-active=true
+\end{lstlisting}
+
+\chapter{Principales routes}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{4cm}p{8cm}}
+        \toprule
+        \textbf{Route} & \textbf{Description} \\
+        \midrule
+        \texttt{/services/OTNPService} & Endpoint SOAP de portabilité. \\
+        \texttt{/services/OTNPService?wsdl} & Description WSDL du service SOAP. \\
+        \texttt{/api/monitoring/search} & Recherche REST des instances jBPM. \\
+        \bottomrule
+    \end{tabular}
+    \caption{Routes exposées par l'application}
+\end{table}
+
+\begin{thebibliography}{9}
+    \bibitem{springboot}
+    Spring Boot Documentation, \url{https://spring.io/projects/spring-boot}
+
+    \bibitem{cxf}
+    Apache CXF Documentation, \url{https://cxf.apache.org/}
+
+    \bibitem{jbpm}
+    jBPM Documentation, \url{https://www.jbpm.org/}
+
+    \bibitem{kie}
+    KIE Server Documentation, \url{https://docs.jboss.org/}
+\end{thebibliography}
+
+\end{document}
