@@ -1,0 +1,16 @@
+schema_version: 1
+module_path: logging_system
+title: Console-Based Logging Without Structured Framework
+scope: []
+source_files:
+    - src/services/monitoringService.js
+    - src/services/processService.js
+    - src/components/ConsultationPage.jsx
+    - src/components/ErrorReportPage.jsx
+    - src/components/StartProcessPage.jsx
+    - src/components/StatistiquesPortabilite.jsx
+    - src/reportWebVitals.js
+    - src/index.js
+    - package.json
+depends_on: []
+related_to: []

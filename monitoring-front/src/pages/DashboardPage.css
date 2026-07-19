@@ -1,0 +1,100 @@
+/* Layout Principal */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Wrapper pour le contenu principal */
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 280px; /* Espace pour sidebar */
+  padding-top: 70px; /* Espace pour la navbar fixe */
+  transition: margin-left 0.3s ease;
+  position: relative;
+  z-index: 1; /* Toujours en dessous de la navbar (z-index: 1000) */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content-wrapper {
+    margin-left: 0; /* Pas de marge sur mobile */
+  }
+}
+/* Layout Principal */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  background-color: #000000; /* Fond noir uniforme */
+  overflow-x: hidden;
+}
+
+/* Effet de lueur diffuse en arrière-plan pour rappeler le login */
+.app-layout::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #ff6600, #a83279);
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15; /* Très léger pour ne pas surcharger le dashboard */
+  top: -10%;
+  right: -5%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Wrapper pour le contenu principal */
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 280px; /* Espace pour sidebar */
+  padding-top: 70px;  /* Espace pour la navbar fixed */
+  transition: margin-left 0.3s ease;
+  position: relative;
+  z-index: 1; /* Toujours en dessous de la navbar (z-index: 1000) */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content-wrapper {
+    margin-left: 0; /* Pas de marge sur mobile */
+  }
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4f7f9;
+}
+
+.main-layout-container {
+  display: flex;
+  flex: 1;
+  margin-top: 70px;
+}
+
+.content-wrapper {
+  flex: 1;
+  margin-left: 280px;
+  min-height: calc(100vh - 70px);
+  overflow-x: hidden;
+  background: #f4f7f9;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
+}
+
+.stats-compact-wrapper {
+  padding: 12px;
+  height: 100%;
+  box-sizing: border-box;
+}

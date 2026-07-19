@@ -1,0 +1,35 @@
+.page-transition-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Couleur de fond propre */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.billcom-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.billcom-logo {
+  max-width: 400px; /* Ajustez selon la taille de votre logo */
+  width: 80%;
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.transition-content {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

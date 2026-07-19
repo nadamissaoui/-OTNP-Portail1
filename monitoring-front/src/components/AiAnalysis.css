@@ -1,0 +1,682 @@
+/* =============================================
+   AIAnalysis.css — couleurs alignées NETWATCH
+   ============================================= */
+
+:root {
+    --nw-orange: #E8611A;
+    --nw-orange-light: rgba(232, 97, 26, 0.12);
+    --nw-orange-border: rgba(232, 97, 26, 0.35);
+}
+
+/* ---- Conteneur principal ---- */
+.ai-analysis-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ai-analysis-header {
+    margin-bottom: 24px;
+}
+
+.ai-analysis-header h2 {
+    color: var(--nw-orange);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    border-left: 4px solid var(--nw-orange);
+    padding-left: 12px;
+}
+
+.ai-analysis-header p {
+    color: #888;
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+/* ---- Formulaire ---- */
+.ai-analysis-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 9px 12px;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    color: #1f2937;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition: border-color 0.15s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--nw-orange);
+    box-shadow: 0 0 0 2px var(--nw-orange-light);
+}
+
+.log-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    color: #1f2937;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+    min-height: 140px;
+    box-sizing: border-box;
+    transition: border-color 0.15s;
+}
+
+.log-textarea:focus {
+    outline: none;
+    border-color: var(--nw-orange);
+    box-shadow: 0 0 0 2px var(--nw-orange-light);
+}
+
+/* ---- Bouton analyser ---- */
+.analyze-button {
+    width: 100%;
+    padding: 11px;
+    background: var(--nw-orange);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.analyze-button:hover {
+    opacity: 0.88;
+}
+
+.analyze-button:active {
+    transform: scale(0.98);
+}
+
+.analyze-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---- Spinner ---- */
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ---- Bandeau erreur ---- */
+.error-banner {
+    background: rgba(226, 75, 74, 0.08);
+    border: 1px solid rgba(226, 75, 74, 0.3);
+    color: #c0392b;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+/* ---- Résultats ---- */
+.results-container {
+    margin-top: 20px;
+}
+
+.results-container h3 {
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+/* ---- Carte d'erreur ---- */
+.error-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--nw-orange);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.error-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.error-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* ---- Badges de sévérité ---- */
+.severity-badge {
+    padding: 3px 9px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.severity-error {
+    background: rgba(226, 75, 74, 0.1);
+    color: #c0392b;
+    border: 1px solid rgba(226, 75, 74, 0.3);
+}
+
+.severity-fatal {
+    background: rgba(163, 45, 45, 0.12);
+    color: #8b1a1a;
+    border: 1px solid rgba(163, 45, 45, 0.35);
+}
+
+.severity-warn {
+    background: rgba(186, 117, 23, 0.1);
+    color: #92580a;
+    border: 1px solid rgba(186, 117, 23, 0.3);
+}
+
+.severity-info {
+    background: rgba(55, 138, 221, 0.1);
+    color: #185fa5;
+    border: 1px solid rgba(55, 138, 221, 0.3);
+}
+
+/* ---- Badge type ---- */
+.error-type-badge {
+    padding: 3px 9px;
+    background: var(--nw-orange-light);
+    color: var(--nw-orange);
+    border: 1px solid var(--nw-orange-border);
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.process-id {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+/* ---- Lien Google ---- */
+.google-link {
+    color: var(--nw-orange);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid var(--nw-orange-border);
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.google-link:hover {
+    background: var(--nw-orange-light);
+}
+
+/* ---- Message d'erreur ---- */
+.error-message {
+    background: #fef2f2;
+    border-left: 3px solid rgba(226, 75, 74, 0.5);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 12px;
+    color: #c0392b;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    margin-bottom: 14px;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+/* ---- Section suggestions ---- */
+.suggestions-section {
+    margin-top: 14px;
+}
+
+.suggestions-section h4 {
+    color: #555;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.suggestion-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.suggestion-source {
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ---- Barre de confiance ---- */
+.confidence-bar {
+    position: relative;
+    background: #e5e7eb;
+    border-radius: 3px;
+    height: 5px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+}
+
+.confidence-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: #1D9E75;
+}
+
+.confidence-text {
+    color: #9ca3af;
+    font-size: 11px;
+    white-space: nowrap;
+    margin-left: 6px;
+}
+
+.suggestion-text {
+    color: #374151;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.suggestion-google-link {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--nw-orange);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.suggestion-google-link:hover {
+    text-decoration: underline;
+}
+
+/* ---- Erreurs similaires ---- */
+.similar-errors-section {
+    margin-top: 14px;
+}
+
+.similar-errors-section h4 {
+    color: #555;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.similar-error-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.similar-error-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.similar-process {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.similarity-score {
+    color: var(--nw-orange);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.similar-error-message {
+    color: #374151;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.applied-solution {
+    margin-top: 8px;
+    padding: 7px 10px;
+    background: rgba(29, 158, 117, 0.08);
+    border-left: 3px solid #1D9E75;
+    color: #0f6e56;
+    font-size: 12px;
+    border-radius: 0 6px 6px 0;
+}
+
+.no-similar {
+    color: #9ca3af;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 36px;
+    color: #9ca3af;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px dashed #d1d5db;
+}
+
+/* =============================================
+   Classes supplémentaires pour AiAnalysisPage
+   ============================================= */
+
+/* Statut KIE */
+.kie-status-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+.kie-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.kie-ok      { background: #1D9E75; }
+.kie-ko      { background: #E24B4A; }
+.kie-pending { background: #BA7517; }
+.kie-label   { color: #6b7280; font-size: 13px; }
+.btn-reconnect {
+    padding: 4px 12px;
+    background: transparent;
+    color: var(--nw-orange);
+    border: 1px solid var(--nw-orange-border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.btn-reconnect:hover { background: var(--nw-orange-light); }
+
+/* Onglets */
+.tabs-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.tab-btn {
+    padding: 10px 24px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    background: #f9fafb;
+    color: #6b7280;
+    transition: background 0.15s, color 0.15s;
+}
+.tab-btn-left  { border-radius: 8px 0 0 8px; border-right: none; }
+.tab-btn-right { border-radius: 0 8px 8px 0; }
+.tab-active {
+    background: var(--nw-orange) !important;
+    color: #fff !important;
+    border-color: var(--nw-orange) !important;
+}
+
+/* Filtres */
+.filters-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.btn-refresh {
+    padding: 9px 18px;
+    background: #1D9E75;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+.btn-refresh:hover    { opacity: 0.88; }
+.btn-refresh:disabled { opacity: 0.5; cursor: not-allowed; }
+.errors-count { color: #9ca3af; font-size: 13px; }
+
+/* Carte d'erreur analysée */
+.error-card-analyzed {
+    border-left-color: var(--nw-orange) !important;
+}
+
+/* Nom du nœud */
+.activity-name { color: #BA7517; font-size: 12px; font-weight: 500; }
+
+/* Date */
+.error-date { color: #9ca3af; font-size: 12px; white-space: nowrap; }
+
+/* Actions */
+.error-actions-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 4px;
+}
+.analysis-done-label { color: #1D9E75; font-size: 12px; font-weight: 500; }
+
+/* Bouton re-analyser */
+.btn-reanalyze { background: #555 !important; }
+
+/* Bloc résultats inline */
+.analysis-results-block {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 2px solid var(--nw-orange-border);
+}
+.analysis-results-title {
+    color: var(--nw-orange);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+.result-badges-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+/* Titres sections suggestions / similaires */
+.suggestions-title  { color: #1D9E75; font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+.similar-errors-title { color: #BA7517; font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+
+/* Barre confiance (renommée pour éviter conflit) */
+.confidence-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.confidence-bar-bg {
+    width: 80px;
+    height: 5px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.confidence-bar-fill {
+    height: 100%;
+    background: #1D9E75;
+    border-radius: 3px;
+}
+
+/* Lien Google bouton plein */
+.google-link-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: var(--nw-orange);
+    color: #fff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.google-link-btn:hover { opacity: 0.88; }
+
+/* KIE déconnecté */
+.kie-disconnected-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+.kie-disconnected-title { color: #BA7517; font-size: 15px; margin-bottom: 8px; }
+.kie-disconnected-sub  { color: #9ca3af; font-size: 13px; }
+
+/* Sous-titre formulaire */
+.form-subtitle { color: #6b7280; font-size: 13px; margin: 0 0 16px; }
+.google-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    background: white;
+    color: #202124;
+
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all .2s ease;
+}
+
+.google-link-btn:hover {
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+/* ── Rapport ── */
+.rapport-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #fff7f0, #fff);
+  border: 1px solid var(--nw-orange-border);
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+.rapport-bar-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  flex: 1;
+}
+.btn-rapport-pdf {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(220,38,38,.3);
+  transition: all .2s;
+}
+.btn-rapport-pdf:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(220,38,38,.4); }
+.btn-rapport-pdf:disabled { opacity: .5; cursor: not-allowed; }
+.btn-rapport-excel {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(22,163,74,.3);
+  transition: all .2s;
+}
+.btn-rapport-excel:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(22,163,74,.4); }
+.btn-rapport-excel:disabled { opacity: .5; cursor: not-allowed; }
+.report-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}

@@ -1,0 +1,58 @@
+/* PortabilityOutForm.css */
+.sp-container {
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.sp-form-card {
+  width: 100%;
+  max-width: 650px;
+}
+
+.sp-form-card-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6600;
+  margin-bottom: 25px;
+}
+
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.simple-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.simple-field label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.simple-input {
+  width: 85%;
+  height: 38px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.submit-btn {
+  width: 85%;
+  height: 42px;
+  margin-top: 15px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

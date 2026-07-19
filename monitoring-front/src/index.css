@@ -1,0 +1,42 @@
+/* ==========================================================================
+   VARIABLES DE THÈME GLOBAL (Blanc pur vs Noir profond)
+   ========================================================================== */
+
+/* Mode Clair (Par défaut ou avec la classe) */
+:root, body.light-theme {
+  --bg-primary: #ffffff;         /* Fond général d'écran blanc pur */
+  --bg-secondary: #f8f9fa;       /* Fond des cartes et cadres */
+  --bg-tertiary: #edf2f7;        /* Fond des inputs et survol table */
+  --text-main: #0a0f2c;          /* Texte foncé */
+  --text-muted: #64748b;         /* Texte gris secondaire */
+  --border-color: #dee2e6;       /* Bordures claires */
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Mode Sombre (S'active avec la classe .dark-theme) */
+body.dark-theme {
+  --bg-primary: #000000;         /* Fond général d'écran noir profond */
+  --bg-secondary: #121212;       /* Fond des cartes et cadres sombres */
+  --bg-tertiary: #1a1a1a;        /* Fond des inputs et survol sombre */
+  --text-main: #ffffff;          /* Texte blanc pur */
+  --text-muted: #94a3b8;         /* Texte gris clair */
+  --border-color: rgba(255, 255, 255, 0.1); /* Bordures discrètes */
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Connexion dynamique au Thème */
+  background-color: var(--bg-primary) !important;
+  color: var(--text-main) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

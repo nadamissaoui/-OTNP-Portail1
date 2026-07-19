@@ -1,0 +1,966 @@
+/* Reset et styles de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   PAGE DE CONNEXION - LE FOND SOMBRE ET LES VAGUES
+   ========================================================================== */
+.page.dynamic-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* Fond noir profond comme sur la maquette */
+}
+
+/* Vagues fluides colorées en arrière-plan */
+.page.dynamic-background::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #ff6600, #a83279);
+  border-radius: 43%;
+  filter: blur(50px);
+  opacity: 0.4;
+  top: -10%;
+  right: -10%;
+  z-index: 1;
+  animation: rotateWave 25s infinite linear;
+}
+
+.page.dynamic-background::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #a83279, #2b1055);
+  border-radius: 40%;
+  filter: blur(60px);
+  opacity: 0.5;
+  bottom: -10%;
+  left: -5%;
+  z-index: 1;
+  animation: rotateWave 30s infinite linear;
+}
+
+@keyframes rotateWave {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Overlay pour améliorer la lisibilité */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 2;
+}
+
+/* ==========================================================================
+   CARTE DE LOGIN - TRANSFORMATION EN DESIGN ROND GLASSMORPHISM
+   ========================================================================== */
+.card.animated-card {
+  display: flex;
+  flex-direction: column; /* Aligne le contenu verticalement dans le cercle */
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%; /* Devient un cercle parfait */
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+  
+  /* Effet Verre Dépoli (Glassmorphism) */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.animated-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 60px rgba(255, 102, 0, 0.15);
+}
+
+/* Fusion et adaptation de l'identité visuelle de la marque à l'intérieur */
+.card-left {
+  background: none; /* Plus de bloc marron séparé */
+  width: auto;
+  padding: 0;
+  gap: 0.2rem;
+  margin-bottom: 10px;
+}
+
+.logo {
+  background: none; /* Retrait du carré orange */
+  color: #ff6600; /* Devient du texte orange pur et élégant */
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.app-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  color: #ffffff; /* Blanc pour contraster sur le sombre */
+  text-transform: uppercase;
+}
+
+.card-right {
+  width: 100%;
+  padding: 0;
+  gap: 0.8rem;
+}
+
+/* Éléments de profil et formulaires */
+.avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ff6600;
+  margin-bottom: 5px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-group {
+  width: 85%; /* Recentrage et contrôle de la largeur des inputs */
+  margin: 0 auto;
+  gap: 0.8rem;
+}
+
+.welcome-user {
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.welcome-user strong {
+  color: #ff6600;
+}
+
+/* Inputs Sombre & Futuriste */
+.input-wrapper input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background: rgba(255, 255, 255, 0.08); /* Transparent */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px; /* Forme pilule plus douce */
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #ffffff; /* Écrit en blanc */
+}
+
+.input-icon {
+  left: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.eye-icon {
+  right: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.input-wrapper input:focus {
+  border-color: #ff6600;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+/* Boutons adaptés au style */
+.btn-main {
+  width: 100%;
+  background: #ff6600; /* Devient orange par défaut pour plus d'impact */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-main:hover {
+  background: #e65c00;
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.btn-back:hover {
+  color: #ffffff;
+}
+
+/* Messages d'erreur & succès */
+.message {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 20px;
+}
+
+.message.error {
+  background: rgba(192, 41, 43, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(192, 41, 43, 0.4);
+}
+
+/* Options annexes */
+.remember-forgot-container {
+  margin-bottom: 0.5rem;
+  padding: 0 5px;
+}
+
+.remember-me-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.remember-me-label:hover {
+  color: #ff6600;
+}
+
+.checkmark {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.forgot-password-link {
+  color: #ff6600;
+}
+
+.forgot-password-link:hover {
+  color: #ffffff;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: auto;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* ==========================================================================
+   DOCK TECHNIQUE : RESPONSIVE SANS CASSER LE PROPORTIONNEL DU CERCLE
+   ========================================================================== */
+@media (max-width: 520px) {
+  .card.animated-card {
+    width: 340px;
+    height: 340px;
+    padding: 20px;
+  }
+  .form-group {
+    width: 95%;
+  }
+  .logo { font-size: 1.1rem; }
+  .app-name { font-size: 0.9rem; }
+  .avatar { width: 50px; height: 50px; }
+  .footer { bottom: 10px; }
+  .remember-forgot-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ==========================================================================
+   TRANSITION DE PAGE - SANS AUCUNE MODIFICATION (CONSERVÉ INTACT)
+   ========================================================================== */
+.page-transition-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.transition-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff6600 0%, #000000 50%, #ff8c00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.page-transition-container.loading .transition-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.transition-content {
+  text-align: center;
+}
+
+.transition-logo {
+  margin-bottom: 2rem;
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.transition-messages {
+  margin-bottom: 2rem;
+}
+
+.message-1, .message-2, .message-3 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  opacity: 0;
+  animation: message-appear 0.5s ease forwards;
+}
+
+.message-1 { animation-delay: 0.2s; }
+.message-2 { animation-delay: 0.7s; }
+.message-3 { animation-delay: 1.2s; }
+
+@keyframes message-appear {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.progress-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6600, #ff8c00);
+  border-radius: 3px;
+  width: 0%;
+  animation: progress-fill 2.5s ease-in-out forwards;
+}
+
+@keyframes progress-fill {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: dot-pulse 1.5s ease-in-out infinite;
+}
+
+.dot:nth-child(2) { animation-delay: 0.3s; }
+.dot:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); background: rgba(255, 255, 255, 0.3); }
+  50% { transform: scale(1.5); background: rgba(255, 255, 255, 0.8); }
+}
+/* Force la carte à se comporter comme un conteneur vertical centré */
+.card.animated-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%; /* Cercle parfait */
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+/* Nouveau style de l'en-tête pour le format circulaire */
+.glass-brand-header {
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  background: none !important; /* On annule l'ancien carré orange */
+  color: #ff6600;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.app-name {
+  color: #ffffff !important; /* Écrit en blanc pour ressortir sur le fond sombre */
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Force les sous-composants Step à ne pas dépasser la largeur du cercle */
+.form-group {
+  width: 85% !important; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+/* Conteneur parent de l'input et de l'icône */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* L'icône de gauche (clé) */
+.input-icon-left {
+  position: absolute;
+  left: 10px; /* Positionnement précis à l'intérieur */
+  z-index: 10;
+}
+
+/* L'icône de droite (œil) */
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Positionnement précis à l'intérieur */
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* L'input lui-même */
+.input-wrapper input {
+  /* Ajoutez du padding pour ne pas cacher le texte sous les icônes */
+  padding-left: 35px; /* Pour l'icône de gauche */
+  padding-right: 35px; /* Pour l'icône de droite */
+}
+/* --- MISE EN PAGE DE LA PAGE LOGIN --- */
+
+.page.dynamic-background.split-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #05050b; /* Fond sombre profond */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Zone de contenu sous la Navbar */
+.login-split-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-top: 80px; /* Laisse respirer la Navbar de 70px */
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Alignement et positionnement à Gauche */
+.login-left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* On force la carte à adopter un style asymétrique épuré */
+.card.animated-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.03); /* Effet translucide sombre */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Alignement et positionnement à Droite pour l'image */
+.login-right-side {
+  flex: 1.2; /* Donne un peu plus d'espace au visuel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cyber-lock-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: smoothFloat 4s ease-in-out infinite; /* Flottaison subtile */
+}
+
+.cyber-lock-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 40px rgba(0, 150, 255, 0.25)); /* Halo bleu néon */
+}
+
+/* Animation douce pour donner de la vie au fond */
+@keyframes smoothFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* --- RESPONSIVE TABLETTE & MOBILE --- */
+@media (max-width: 968px) {
+  .login-split-content {
+    flex-direction: column;
+  }
+  
+  /* On cache le grand cadenas sur mobile pour garder l'écran propre et focus sur les inputs */
+  .login-right-side {
+    display: none;
+  }
+  
+  .login-left-side {
+    width: 100%;
+    flex: 1;
+  }
+}
+/* ==========================================================================
+   MISE EN PAGE ET INTEGRATION DU CADENAS (SPLIT LAYOUT)
+   ========================================================================== */
+
+.page.dynamic-background.split-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #05050b; 
+  position: relative;
+  overflow: hidden;
+}
+
+/* Zone principale partagée */
+.login-split-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-top: 80px; /* Espace sous la barre Billcom */
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Positionnement à gauche (Formulaire vitré) */
+.login-left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Ajustement de la carte vitrée (Glassmorphism asymétrique) */
+.card.animated-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Positionnement à droite (Cadenas technologique) */
+.login-right-side {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cyber-lock-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatAnimation 4s ease-in-out infinite; /* Animation douce */
+}
+
+.cyber-lock-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 40px rgba(0, 150, 255, 0.25)); /* Ombre lumineuse bleue */
+}
+
+/* Animation de flottaison du cadenas */
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Adaptation Responsive (Tablettes et Mobiles) */
+@media (max-width: 968px) {
+  .login-split-content {
+    flex-direction: column;
+  }
+  /* On cache le cadenas sur petit écran pour garder le login lisible */
+  .login-right-side {
+    display: none;
+  }
+  .login-left-side {
+    width: 100%;
+    flex: 1;
+  }
+}
+/* Container global de ta page login */
+.page.dynamic-background.split-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0c0d14 !important; /* Fond sombre cyber */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grille principale sous la Navbar */
+.login-split-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-top: 80px; /* Espace pour la Navbar */
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Zone gauche (Formulaire vitré) */
+.login-left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style forcé pour garder la carte en cercle ou bloc propre noir translucide */
+.card.animated-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(20, 21, 28, 0.65) !important; /* Fond sombre pour la carte */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  color: #ffffff !important;
+}
+
+/* Zone droite (Cadenas) */
+.login-right-side {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cyber-lock-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+
+.cyber-lock-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(0, 150, 255, 0.2));
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Cache le cadenas sur mobile */
+@media (max-width: 968px) {
+  .login-split-content {
+    flex-direction: column;
+  }
+  .login-right-side {
+    display: none;
+  }
+  .login-left-side {
+    width: 100%;
+    flex: 1;
+  }
+}
+/* --- BACKGROUND GLOBAL DE LA PAGE AVEC CADENAS A DROITE --- */
+.page.login-background-cyber {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #05060e; /* Couleur de base sombre */
+  
+  /* Intégration de l'image en fond d'écran calée à droite */
+  background-image: url('./components/login/cyberLock.png'); 
+  background-repeat: no-repeat;
+  background-position: right center; /* Aligne l'image parfaitement à droite */
+  background-size: contain; /* L'image garde ses proportions sans être coupée */
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Couche de lissage optionnelle pour l'effet de lumière fondu */
+.page.login-background-cyber::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #05060e 40%, rgba(5, 6, 14, 0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- ZONE DU FORMULAIRE A GAUCHE --- */
+.login-wrapper-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Aligne le bloc vers la gauche */
+  align-items: center;
+  padding-left: 10%; /* Espace par rapport au bord gauche de l'écran */
+  z-index: 2; /* Passe au-dessus du fond d'écran */
+  box-sizing: border-box;
+}
+
+/* Ta carte sombre Glassmorphic rectangulaire */
+.card.animated-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(18, 19, 26, 0.75) !important; /* Fond sombre opaque idéal */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 45px 40px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Retrait de la barre noire en haut de l'écran de connexion si nécessaire */
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 1024px) {
+  .page.login-background-cyber {
+    background-image: none; /* On retire le cadenas sur mobile pour préserver l'espace */
+  }
+  .login-wrapper-left {
+    padding-left: 0;
+    justify-content: center; /* On recentre la carte sur mobile */
+  }
+}
+/* Le conteneur qui englobe la sidebar et le contenu */
+.main-layout-container {
+  display: flex;
+  margin-top: 70px; /* Laisse la place pour la Navbar du haut */
+}
+
+/* La zone de droite qui contient le formulaire et le tableau */
+.content-wrapper {
+  flex: 1;
+  margin-left: 260px; /* Laisse la place pour la Sidebar fixe */
+  padding: 30px;
+  background-color: #141622; /* Fond légèrement plus clair pour faire ressortir les tableaux blancs */
+  min-height: calc(100vh - 70px);
+  box-sizing: border-box;
+}
+/* ==========================================================================
+   1. DÉFINITION DES VARIABLES DE THÈME (Par défaut : Mode Clair)
+   ========================================================================== */
+:root, body[data-theme='light'] {
+  --bg-primary: #ffffff;          /* Fond de la page blanc */
+  --bg-navbar: #f8f9fa;           /* Fond de la navbar gris clair */
+  --text-main: #1e293b;           /* Texte principal sombre */
+  --text-muted: #64748b;         /* Texte secondaire */
+  --border-color: #e2e8f0;       /* Bordures claires */
+  --card-bg: #f1f5f9;            /* Fond des composants/cartes */
+}
+
+/* ==========================================================================
+   2. COMMUTATION EN MODE SOMBRE (S'active quand data-theme="dark")
+   ========================================================================== */
+body[data-theme='dark'] {
+  --bg-primary: #0b111e;          /* Fond bleu nuit/noir de ton appli */
+  --bg-navbar: #141b2d;           /* Fond de la navbar sombre */
+  --text-main: #ffffff;           /* Texte blanc éclatant */
+  --text-muted: #94a3b8;         /* Texte secondaire gris clair */
+  --border-color: #232d45;       /* Bordures sombres */
+  --card-bg: #1e293b;            /* Fond des cartes en mode sombre */
+}
+
+/* ==========================================================================
+   3. APPLICATION DES VARIABLES SUR LA NAVBAR
+   ========================================================================== */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce */
+}
+
+.navbar {
+  background-color: var(--bg-navbar);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+  /* Garde le reste de tes propriétés existantes pour la navbar (display: flex, padding...) */
+}
+
+.navbar-brand-text {
+  color: var(--text-main);
+}
+
+/* Exemple pour le menu déroulant du thème lui-même */
+.theme-dropdown {
+  background-color: var(--bg-navbar);
+  border: 1px solid var(--border-color);
+}
+
+.theme-dropdown button {
+  color: var(--text-main);
+}
+
+.theme-dropdown button:hover {
+  background-color: var(--card-bg);
+}
+.login-wrapper-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px; 
+  padding-left: 100px;
+  height: 80vh;
+}
+
+.welcome-message-side {
+  color: white;
+  max-width: 450px;
+  animation: fadeInRight 1s ease-out;
+}
+
+.welcome-message-side h1 {
+  font-size: 3.5rem;
+  color: #ff7900; /* Orange Orange */
+  margin-bottom: 20px;
+}
+
+.welcome-message-side p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}

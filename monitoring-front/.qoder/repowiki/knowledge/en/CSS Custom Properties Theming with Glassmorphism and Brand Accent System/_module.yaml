@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: frontend_style
+title: CSS Custom Properties Theming with Glassmorphism and Brand Accent System
+scope: []
+source_files:
+    - src/index.css
+    - src/App.css
+    - src/components/dashboard/Dashboard.css
+    - src/components/layout/Navbar.css
+    - src/components/layout/Sidebar.css
+    - src/components/StartProcess.css
+    - src/components/AiAnalysis.css
+    - src/pages/DashboardPage.css
+depends_on: []
+related_to: []

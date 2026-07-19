@@ -1,0 +1,157 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: master
+nodes_managed: true
+exported_at: "2026-06-25T23:47:19Z"
+modules:
+    "":
+        dir_name: Monitoring & Process Management UI
+        title: Monitoring & Process Management UI
+        scope:
+            - README.md
+            - .gitignore
+            - package.json
+            - package-lock.json
+            - public/
+            - src/
+            - public\favicon.ico
+            - public\image.png
+            - public\index.html
+            - public\logo192.png
+            - public\logo512.png
+            - public\manifest.json
+            - public\robots.txt
+            - src\App.css
+            - src\App.js
+            - src\App.test.js
+            - src\PortabilityOutForm.css
+            - src\PortabilityOutForm.js
+            - src\ahmed.ben.png
+            - src\components\AiAnalysis.css
+            - src\components\AiAnalysisPage.jsx
+            - src\components\Consultation.css
+            - src\components\ConsultationPage.jsx
+            - src\components\ErrorReportPage.jsx
+            - src\components\PageTransition.css
+            - src\components\PageTransition.jsx
+            - src\components\RecyclageMasse.css
+            - src\components\RecyclageMassePage.jsx
+            - src\components\StartProcess.css
+            - src\components\StartProcessPage.jsx
+            - src\components\Statistique.css
+            - src\components\StatistiquesPortabilite.jsx
+            - src\components\dashboard\Dashboard.css
+            - src\components\dashboard\Dashboard.jsx
+            - src\components\layout\Navbar.css
+            - src\components\layout\Navbar.jsx
+            - src\components\layout\Sidebar.css
+            - src\components\layout\Sidebar.jsx
+            - src\components\layout\download.jpg
+            - src\components\login\LoginPage.jsx
+            - src\components\login\StepPassword.jsx
+            - src\components\login\StepUsername.jsx
+            - src\components\login\cyberLock.png
+            - src\i18n.js
+            - src\images.jpg
+            - src\index.css
+            - src\index.js
+            - src\logo.svg
+            - src\nada.jpg
+            - src\pages\DashboardPage.css
+            - src\pages\DashboardPage.jsx
+            - src\pages\MySpace_portabilityin (1).code-workspace
+            - src\reportWebVitals.js
+            - src\services\aiAnalysisService.js
+            - src\services\authService.js
+            - src\services\monitoringService.js
+            - src\services\processService.js
+            - src\setupTests.js
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    build_system:
+        dir_name: Create React App Build System
+        title: Create React App Build System
+        scope: []
+        source_files:
+            - package.json
+            - README.md
+            - package-lock.json
+        children: []
+        depends_on: []
+        related_to: []
+    configuration_system:
+        dir_name: Hardcoded API Configuration with Create React App Environment Support
+        title: Hardcoded API Configuration with Create React App Environment Support
+        scope: []
+        source_files:
+            - src/services/authService.js
+            - src/services/monitoringService.js
+            - src/services/processService.js
+            - src/services/aiAnalysisService.js
+            - src/i18n.js
+            - .gitignore
+            - package.json
+        children: []
+        depends_on: []
+        related_to: []
+    dependency_management:
+        dir_name: NPM Dependency Management with Create React App
+        title: NPM Dependency Management with Create React App
+        scope: []
+        source_files:
+            - package.json
+            - package-lock.json
+        children: []
+        depends_on: []
+        related_to: []
+    error_handling:
+        dir_name: Ad-hoc Error Handling with Try-Catch and Console Logging
+        title: Ad-hoc Error Handling with Try-Catch and Console Logging
+        scope: []
+        source_files:
+            - src/services/processService.js
+            - src/services/monitoringService.js
+            - src/services/authService.js
+            - src/services/aiAnalysisService.js
+            - src/components/login/LoginPage.jsx
+            - src/components/AiAnalysisPage.jsx
+            - src/components/ErrorReportPage.jsx
+        children: []
+        depends_on: []
+        related_to: []
+    frontend_style:
+        dir_name: CSS Custom Properties Theming with Glassmorphism and Brand Accent System
+        title: CSS Custom Properties Theming with Glassmorphism and Brand Accent System
+        scope: []
+        source_files:
+            - src/index.css
+            - src/App.css
+            - src/components/dashboard/Dashboard.css
+            - src/components/layout/Navbar.css
+            - src/components/layout/Sidebar.css
+            - src/components/StartProcess.css
+            - src/components/AiAnalysis.css
+            - src/pages/DashboardPage.css
+        children: []
+        depends_on: []
+        related_to: []
+    logging_system:
+        dir_name: Console-Based Logging Without Structured Framework
+        title: Console-Based Logging Without Structured Framework
+        scope: []
+        source_files:
+            - src/services/monitoringService.js
+            - src/services/processService.js
+            - src/components/ConsultationPage.jsx
+            - src/components/ErrorReportPage.jsx
+            - src/components/StartProcessPage.jsx
+            - src/components/StatistiquesPortabilite.jsx
+            - src/reportWebVitals.js
+            - src/index.js
+            - package.json
+        children: []
+        depends_on: []
+        related_to: []
