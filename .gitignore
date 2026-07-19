@@ -1,0 +1,9 @@
+node_modules/ 
+target/ 
+.idea/ 
+__pycache__/ 
+*.pyc 
+.venv/ 
+build/ 
+devserver-*.log 
+devserver-*.err 
